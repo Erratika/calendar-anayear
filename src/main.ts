@@ -6,7 +6,7 @@ Hooks.once("setup", () => {
 
   CONFIG.DND5E.calendars = {
     ...(CONFIG.DND5E.calendars ?? {}),
-    [myFantasyCalendar.id]: myFantasyCalendar
+    [calendarAnayear.id]: calendarAnayear
   };
 
   console.log("Calendar injected early:", CONFIG.DND5E.calendars);
