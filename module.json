@@ -1,9 +1,9 @@
 {
-  "id": "fantasy-calendar",
-  "title": "Fantasy Calendar",
+  "id": "calendar-anayear",
+  "title": "Calendar Anayear",
   "description": "Custom calendar system integrated with Foundry time",
   "version": "1.0.0",
-  "authors": [{ "name": "You" }],
+  "authors": [{ "name": "Erratika" }],
   "esmodules": ["dist/main.js"],
   "styles": ["styles/calendar.css"],
 
