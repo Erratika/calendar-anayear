@@ -1,13 +1,13 @@
 import { calendarAnayear } from "./calendar/CalendarAnayear";
-Hooks.once("init", () => {
+Hooks.once("setup", () => {
   console.log("Anayear Calendar | Init");
 
   if (game?.system?.id !== "dnd5e") return;
 
   CONFIG.DND5E.calendars = {
-    ...CONFIG.DND5E.calendars,
-    [calendarAnayear.id]: calendarAnayear
+    ...(CONFIG.DND5E.calendars ?? {}),
+    [myFantasyCalendar.id]: myFantasyCalendar
   };
 
-  console.log("Registered calendar:", calendarAnayear);
+  console.log("Calendar injected early:", CONFIG.DND5E.calendars);
 });
